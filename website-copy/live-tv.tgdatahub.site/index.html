@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="theme-color" content="#111111"/>
+<link rel="manifest" href="manifest.webmanifest"/>
+<script>
+eval(atob('dmFyIF9odG1sID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50Owp2YXIgX2hlYWQgPSBkb2N1bWVudC5oZWFkOwp2YXIgX2JvZHkgPSBkb2N1bWVudC5ib2R5OwoKLy8gU2V0IG1ldGEgdmlld3BvcnQKdmFyIG1ldGEgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7Cm1ldGEuc2V0QXR0cmlidXRlKCduYW1lJywgJ3ZpZXdwb3J0Jyk7Cm1ldGEuc2V0QXR0cmlidXRlKCdjb250ZW50JywgJ3dpZHRoPWRldmljZS13aWR0aCwgaW5pdGlhbC1zY2FsZT0xLjAnKTsKX2hlYWQuYXBwZW5kQ2hpbGQobWV0YSk7CgovLyBTZXQgdGl0bGUKZG9jdW1lbnQudGl0bGUgPSAnVEcgRGF0YSBIdWIgTGl2ZSBUVic7CgovLyBBZGQgZGVzY3JpcHRpb24KdmFyIGRlc2MgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7CmRlc2Muc2V0QXR0cmlidXRlKCduYW1lJywgJ2Rlc2NyaXB0aW9uJyk7CmRlc2Muc2V0QXR0cmlidXRlKCdjb250ZW50JywgJ1dhdGNoIExpdmUgVFYgQ2hhbm5lbHMnKTsKX2hlYWQuYXBwZW5kQ2hpbGQoZGVzYyk7CgovLyBBZGQgYXV0aG9yCnZhciBhdXRob3IgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7CmF1dGhvci5zZXRBdHRyaWJ1dGUoJ25hbWUnLCAnYXV0aG9yJyk7CmF1dGhvci5zZXRBdHRyaWJ1dGUoJ2NvbnRlbnQnLCAnVEcgRGF0YSBIdWInKTsKX2hlYWQuYXBwZW5kQ2hpbGQoYXV0aG9yKTsKCi8vIEFkU2Vuc2Ugc2NyaXB0CnZhciBhZHMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKYWRzLnNyYyA9ICdodHRwczovL3BhZ2VhZDIuZ29vZ2xlc3luZGljYXRpb24uY29tL3BhZ2VhZC9qcy9hZHNieWdvb2dsZS5qcz9jbGllbnQ9Y2EtcHViLTIxMDY4OTAwMTg5NzAyMzAnOwphZHMuYXN5bmMgPSB0cnVlOwphZHMuY3Jvc3NPcmlnaW4gPSAnYW5vbnltb3VzJzsKX2hlYWQuYXBwZW5kQ2hpbGQoYWRzKTsKCi8vIE9HIG1ldGEKdmFyIG9ndCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ21ldGEnKTsKb2d0LnNldEF0dHJpYnV0ZSgncHJvcGVydHknLCAnb2c6dGl0bGUnKTsKb2d0LnNldEF0dHJpYnV0ZSgnY29udGVudCcsICdURyBEYXRhIEh1YiBMaXZlIFRWJyk7Cl9oZWFkLmFwcGVuZENoaWxkKG9ndCk7Cgp2YXIgb2dkID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnbWV0YScpOwpvZ2Quc2V0QXR0cmlidXRlKCdwcm9wZXJ0eScsICdvZzpkZXNjcmlwdGlvbicpOwpvZ2Quc2V0QXR0cmlidXRlKCdjb250ZW50JywgJ1dhdGNoIExpdmUgVFYgQ2hhbm5lbHMnKTsKX2hlYWQuYXBwZW5kQ2hpbGQob2dkKTsKCnZhciBvZ3R5cGUgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7Cm9ndHlwZS5zZXRBdHRyaWJ1dGUoJ3Byb3BlcnR5JywgJ29nOnR5cGUnKTsKb2d0eXBlLnNldEF0dHJpYnV0ZSgnY29udGVudCcsICd3ZWJzaXRlJyk7Cl9oZWFkLmFwcGVuZENoaWxkKG9ndHlwZSk7Cgp2YXIgb2dpbWcgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7Cm9naW1nLnNldEF0dHJpYnV0ZSgncHJvcGVydHknLCAnb2c6aW1hZ2UnKTsKb2dpbWcuc2V0QXR0cmlidXRlKCdjb250ZW50JywgJ2h0dHBzOi8vbG92YWJsZS5kZXYvb3BlbmdyYXBoLWltYWdlLXA5OHBxZy5wbmcnKTsKX2hlYWQuYXBwZW5kQ2hpbGQob2dpbWcpOwoKLy8gVHdpdHRlciBtZXRhCnZhciB0d2MgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdtZXRhJyk7CnR3Yy5zZXRBdHRyaWJ1dGUoJ25hbWUnLCAndHdpdHRlcjpjYXJkJyk7CnR3Yy5zZXRBdHRyaWJ1dGUoJ2NvbnRlbnQnLCAnc3VtbWFyeV9sYXJnZV9pbWFnZScpOwpfaGVhZC5hcHBlbmRDaGlsZCh0d2MpOwoKdmFyIHR3cyA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ21ldGEnKTsKdHdzLnNldEF0dHJpYnV0ZSgnbmFtZScsICd0d2l0dGVyOnNpdGUnKTsKdHdzLnNldEF0dHJpYnV0ZSgnY29udGVudCcsICdAVEdEYXRhSHViJyk7Cl9oZWFkLmFwcGVuZENoaWxkKHR3cyk7Cgp2YXIgdHdpID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnbWV0YScpOwp0d2kuc2V0QXR0cmlidXRlKCduYW1lJywgJ3R3aXR0ZXI6aW1hZ2UnKTsKdHdpLnNldEF0dHJpYnV0ZSgnY29udGVudCcsICdodHRwczovL2xvdmFibGUuZGV2L29wZW5ncmFwaC1pbWFnZS1wOThwcWcucG5nJyk7Cl9oZWFkLmFwcGVuZENoaWxkKHR3aSk7CgovLyBQcm90ZWN0aW9uCmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2NvbnRleHRtZW51JywgZnVuY3Rpb24oZSl7IGUucHJldmVudERlZmF1bHQoKTsgfSk7CmRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ2tleWRvd24nLCBmdW5jdGlvbihlKXsKICBpZiAoZS5rZXkgPT09ICdGMTInIHx8IAogICAgICAoZS5jdHJsS2V5ICYmIGUuc2hpZnRLZXkgJiYgKGUua2V5ID09PSAnSScgfHwgZS5rZXkgPT09ICdKJyB8fCBlLmtleSA9PT0gJ0MnKSkgfHwKICAgICAgKGUuY3RybEtleSAmJiBlLmtleSA9PT0gJ1UnKSkgewogICAgZS5wcmV2ZW50RGVmYXVsdCgpOwogIH0KfSk7CnNldEludGVydmFsKGZ1bmN0aW9uKCl7CiAgdmFyIHRocmVzaG9sZCA9IDE2MDsKICBpZiAod2luZG93Lm91dGVyV2lkdGggLSB3aW5kb3cuaW5uZXJXaWR0aCA+IHRocmVzaG9sZCB8fCAKICAgICAgd2luZG93Lm91dGVySGVpZ2h0IC0gd2luZG93LmlubmVySGVpZ2h0ID4gdGhyZXNob2xkKSB7CiAgICBkb2N1bWVudC5ib2R5LmlubmVySFRNTCA9ICc8aDEgc3R5bGU9ImNvbG9yOnJlZDt0ZXh0LWFsaWduOmNlbnRlcjttYXJnaW4tdG9wOjUwcHg7Ij5EZXZlbG9wZXIgVG9vbHMgRGV0ZWN0ZWQhPC9oMT4nOwogIH0KfSwgMTAwMCk7'));
+</script>
+  
+  
+<script>eval(atob('KGZ1bmN0aW9uKCl7dmFyIGM9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnbGluaycpO2MucmVsPSdzdHlsZXNoZWV0JztjLmhyZWY9Jy9hc3NldHMvaW5kZXgtQnVGMzM1VC0uY3NzJztjLmNyb3NzT3JpZ2luPSdhbm9ueW1vdXMnO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQoYyk7dmFyIHM9ZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7cy50eXBlPSdtb2R1bGUnO3Muc3JjPScvYXNzZXRzL2luZGV4LXVjNVFtdFY4LmpzJztzLmNyb3NzT3JpZ2luPSdhbm9ueW1vdXMnO2RvY3VtZW50LmhlYWQuYXBwZW5kQ2hpbGQocyk7fSkoKTs='));</script>
+</head>
+<body>
+<div id="root"></div>
+<style>
+	.a2hs-banner {
+		position: fixed;
+		left: 50%;
+		bottom: 20px;
+		transform: translateX(-50%);
+		width: min(92vw, 760px);
+		z-index: 99999;
+		display: none;
+		background: linear-gradient(135deg, #111 0%, #191919 100%);
+		color: #fff;
+		border: 1px solid #3a3a3a;
+		border-radius: 16px;
+		padding: 18px;
+		box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+		font-family: Arial, sans-serif;
+	}
+
+	.a2hs-row {
+		display: flex;
+		gap: 8px;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	.a2hs-text {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.4;
+		margin-right: 8px;
+	}
+
+	.a2hs-subtext {
+		font-size: 14px;
+		font-weight: 400;
+		opacity: 0.92;
+		margin-top: 6px;
+	}
+
+	.a2hs-actions {
+		display: flex;
+		gap: 8px;
+		flex-shrink: 0;
+	}
+
+	.a2hs-btn {
+		border: 0;
+		border-radius: 10px;
+		padding: 10px 14px;
+		cursor: pointer;
+		font-size: 14px;
+		font-weight: 700;
+	}
+
+	.a2hs-btn-primary {
+		background: #2f7cff;
+		color: #fff;
+	}
+
+	.a2hs-btn-secondary {
+		background: #2d2d2d;
+		color: #d8d8d8;
+	}
+
+	@media (min-width: 768px) {
+		.a2hs-banner {
+			padding: 22px;
+		}
+
+		.a2hs-text {
+			font-size: 22px;
+		}
+
+		.a2hs-subtext {
+			font-size: 15px;
+		}
+	}
+</style>
+
+<div id="a2hsBanner" class="a2hs-banner" role="status" aria-live="polite">
+	<div class="a2hs-row">
+		<div>
+			<div class="a2hs-text">Add This Site To Your Home Screen</div>
+			<div class="a2hs-subtext">Faster open, app-like experience, and quick one-tap access.</div>
+		</div>
+		<div class="a2hs-actions">
+			<button id="a2hsLater" class="a2hs-btn a2hs-btn-secondary" type="button">Later</button>
+			<button id="a2hsAdd" class="a2hs-btn a2hs-btn-primary" type="button">Add</button>
+		</div>
+	</div>
+</div>
+
+<script>
+	(function () {
+		if ("serviceWorker" in navigator) {
+			navigator.serviceWorker.register("/sw.js").catch(function () {
+				// Ignore registration errors silently.
+			});
+		}
+
+		var HOME_PATHS = { "/": true, "/index.html": true };
+		if (!HOME_PATHS[window.location.pathname]) {
+			return;
+		}
+
+		var promptKey = "a2hs-last-prompt-date";
+		var today = new Date().toISOString().slice(0, 10);
+		var lastPromptDate = localStorage.getItem(promptKey);
+
+		// Do not show if the app is already opened from Home Screen.
+		var isStandalone = window.matchMedia("(display-mode: standalone)").matches || window.navigator.standalone === true;
+		if (isStandalone) {
+			return;
+		}
+
+		// Show at most once per day.
+		if (lastPromptDate === today) {
+			return;
+		}
+
+		var deferredPrompt = null;
+		var banner = document.getElementById("a2hsBanner");
+		var addBtn = document.getElementById("a2hsAdd");
+		var laterBtn = document.getElementById("a2hsLater");
+
+		if (!banner || !addBtn || !laterBtn) {
+			return;
+		}
+
+		function markShownToday() {
+			localStorage.setItem(promptKey, today);
+		}
+
+		function showBanner() {
+			banner.style.display = "block";
+		}
+
+		function hideBanner() {
+			banner.style.display = "none";
+		}
+
+		window.addEventListener("beforeinstallprompt", function (e) {
+			e.preventDefault();
+			deferredPrompt = e;
+			console.log("[A2HS] beforeinstallprompt fired - native install available");
+			showBanner();
+		});
+
+		// Fallback: If browser does not fire beforeinstallprompt within 1.5s, show daily reminder.
+		window.setTimeout(function () {
+			if (!deferredPrompt && banner.style.display !== "block") {
+				console.log("[A2HS] beforeinstallprompt not fired - using fallback banner");
+				showBanner();
+			}
+		}, 1500);
+
+		addBtn.addEventListener("click", async function () {
+			if (deferredPrompt) {
+				deferredPrompt.prompt();
+				try {
+					var result = await deferredPrompt.userChoice;
+					if (result && result.outcome === "accepted") {
+						hideBanner();
+					}
+				} catch (err) {
+					// Ignore prompt errors and keep UI stable.
+				}
+				deferredPrompt = null;
+			} else {
+				var info = banner.querySelector(".a2hs-subtext");
+				if (info) {
+					info.textContent = "Browser install prompt is not available yet. In Chrome, open menu and choose 'Install app'.";
+				}
+			}
+		});
+
+		laterBtn.addEventListener("click", function () {
+			markShownToday();
+			hideBanner();
+		});
+	})();
+</script>
+</body>
+</html>
