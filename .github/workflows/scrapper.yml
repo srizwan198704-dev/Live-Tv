@@ -1,0 +1,54 @@
+name: Website Scraper
+
+on:
+  workflow_dispatch: # এটি দিয়ে আপনি নিজে বাটন চেপে রান করতে পারবেন
+  schedule:
+    - cron: '0 0 * * *' # প্রতিদিন একবার স্বয়ংক্রিয়ভাবে ব্যাকআপ নেওয়ার জন্য (ঐচ্ছিক)
+
+permissions:
+  contents: write # গিটহাবে ফাইল পুশ করার অনুমতি
+
+jobs:
+  scrape_and_commit:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Install Tools
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y wget httrack
+
+    - name: Scrape Website
+      run: |
+        mkdir -p website-copy
+        cd website-copy
+        
+        # wget ব্যবহার করে সব ডিটেইলস সহ কপি করা হচ্ছে
+        wget \
+          --recursive \
+          --page-requisites \
+          --adjust-extension \
+          --span-hosts \
+          --convert-links \
+          --restrict-file-names=windows \
+          --no-parent \
+          --user-agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" \
+          "http://live-tv.tgdatahub.site/" || true
+
+    - name: Commit and Push Changes
+      run: |
+        git config --global user.name "github-actions[bot]"
+        git config --global user-email "github-actions[bot]@users.noreply.github.com"
+        
+        git add website-copy/
+        
+        # যদি নতুন কোনো পরিবর্তন থাকে তবেই কমিট করবে, নয়তো স্কিপ করবে
+        if git diff --staged --quiet; then
+          echo "No changes detected."
+        else
+          git commit -m "Automated website copy: $(date +'%Y-%m-%d %H:%M:%S')"
+          git push
+        fi
